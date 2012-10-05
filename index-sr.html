@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
     <title>Tehnomegdan</title>
-    <meta name="description" content="Tehnomegdan IT conference / hackathon">
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/css/main.css" type="text/css" charset="utf-8">
-    <link rel="icon" sizes="64x64" type="image/png" href="./static/img/favico-64x64.png">
-    <link rel="icon" sizes="48x48" type="image/png" href="./static/img/favico-48x48.png">
-    <link rel="icon" sizes="32x32" type="image/png" href="./static/img/favico-32x32.png">
+    <meta name="description" content="Tehnomegdan IT konferencija / hakaton" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/main.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./static/google-code-prettify/prettify.css" type="text/css" />
+    <link rel="icon" sizes="64x64" type="image/png" href="./static/img/favico-64x64.png" />
+    <link rel="icon" sizes="48x48" type="image/png" href="./static/img/favico-48x48.png" />
+    <link rel="icon" sizes="32x32" type="image/png" href="./static/img/favico-32x32.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="./static/img/favico-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="./static/img/favico-72x72.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="./static/img/favico-114x114.png" />
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./static/img/favico-32x32.ico">
-    <script charset="utf-8" src="./static/js/jquery-1.8.1.min.js"></script>
-    <script charset="utf-8" src="./static/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./static/img/favico-32x32.ico" />
+    <script type="text/javascript" charset="utf-8" src="./static/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./static/js/tehnomegdan.js"></script>
+    <script type="text/javascript" src="./static/google-code-prettify/prettify.js"></script>
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -40,13 +43,36 @@
               <a href="./index.html" class="btn btn-primary flag-en">&nbsp;</a>
             </div>
             <div class="btn-group">
-              <a class="btn btn-primary disabled btn-register">Registracija</a>
+              <a data-toggle="modal" href="#registrationModal" class="btn btn-primary btn-register">Registracija</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="modal hide fade" tabindex="-1" id="registrationModal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Registracija</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" id="registerTabs">
+          <li class="active"><a href="#guest" data-toggle="tab"><h4>Za goste</h4></a></li>
+          <li><a href="#hacker" data-toggle="tab"><h4>Za hakere</h4></a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="guest">
+            <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dC1SeFFVUjItRkxjaGxJWTBaSllLeGc6MQ" width="100%" height="638" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>          
+          </div>
+          <div class="tab-pane fade" id="hacker">
+            <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dF8wTVRyOFV3S3RKd01vZGJCV3YyX3c6MA" width="100%" height="1217" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Zatvori</a>
+      </div>
+    </div>
 
     <div class="container-fluid">
       <div class="hero-unit mainLogo" style="padding: 10px; margin-bottom: 20px;">
@@ -198,7 +224,73 @@
 
           </div>
           <div class="tab-pane fade" id="registration">
-            <p>Uskoro</p>
+            <p>Registracija za Tehnomegdan je otvorena za svakoga, i potpuno je besplatna</p>
+
+            <p>Možete prisustvovati Tehnomegdanu kao gost ili kao haker koji će učestvovati na hakatonu. Svi, dakle i gosti i hakeri, pozvani su na celokupni program oba dana, te se stoga prijavite samo za jednu od ove dve opcije.</p>
+
+            <br/>
+            
+            <h3>Registracija za goste</h3>
+
+            <p>Ako se želite registrovati kao gost, sve što treba da uradite je da kliknete na dugme za registraciju u gornjem desnom ćošku i popunite formular. U skladu sa fizičkim ograničenjima prostora, možemo primiti 80 gostiju i 70 hakerač stoga, mesta će biti ponuđena registrovanim učesnicima redom kojim su se registrovali. Takođe, jednu sedmicu pre održavanja događaja kontaktiraćemo sve registrante kako bi nam potvrdili učešće. Ukoliko imate bilo kakvih pitanja, molim vas kontaktirajte nas putem email-a na <a href="mailto:tehnomegdan@tehnomegdan.rs">tehnomegdan@tehnomegdan.rs</a></p>
+
+            <br/>
+
+            <h3>Registracija za hakere</h3>
+
+            <p>Da biste učestvovali na hakatonu, i time stekli šansu da iznesete svoje revolucionarne ideje pred žirijem sastavljenog od stručnjaka i investitora, kao i šansu da osvojite vredne nagrade, opet sve što treba da uradite je da popunite formular klikom na dugme "Registracija" u gornjem desnom uglu.</p>
+
+            <p>Tehnomegdan hakaton je timsko nadmetanje; timovi se moraju sastojati od 2 ili 3 osobe. Kada budete popunjavali formular, upišite podatke o svim članovima vašeg tima. Ukoliko želite da učestvujete, a nemate partnera, registrujte se sami i mi ćemo vas uključiti u tim sa još jednom ili dve osobe.</p>
+
+            <p>Konačno, imate opciju da postanete VIP haker. Štaviše, jako je preporučljivo da probate da steknete VIP status. S obzirom na ograničenost prostora, možemo primiti ograničen broj hakera. VIP hakerima biće zagarantovano učešće, dok će nakon toga ostali registrovani hakeri dobijati mesta redom kojim su se registrovali. Uz garantovano učešće, VIP hakeri imaće još par iznenađenja-povlastica na samom Tehnomegdanu! Kako bi dobili VIP status, treba (naravno, uz standardnu registraciju kao i svi ostali hakeri) da nam pošaljete jedan email. Instrukcije kako da to uradite su u sledećem paragrafu. Naravno, za sva pitanja i kritike, obratite nam se putem email-a na <a href="mailto:tehnomegdan@tehnomegdan.rs">tehnomegdan@tehnomegdan.rs</a>. Srećno hakovanje!</p>
+
+            <br/>
+
+            <h5>Kako dobiti VIP status</h5>
+            <p>Email na koji treba da aplicirate za VIP status je AABBCCDD@tehnomegdan.rs, gde svako od AA, BB, CC, DD treba zameniti odgovorima na pitanja iz tabele ispod, i treba ih predstaviti kao jedan bajt napisan heksadecimalnim zapisom, uključujući ako je to potrebno nule sa leve strane.
+
+            <table border="1" cellpadding="10">
+              <tr>
+                <td>AA</td>
+                <td>Sadržaj 511-og bajta hard diska na kome postoji funkcionalna instalacija Windows XP operativnog sistema</td>
+              </tr>
+              <tr>
+                <td>BB</td>
+                <td>Najveći prosti delilac ukupnog broja <i>fajlova</i> u zvaničnoj distribuciji Android SDK za linux, r20.0.3</td>
+              </tr>
+              <tr>
+                <td>CC</td>
+                <td>Broj puta, nakon početog izvršenja main() funkcije, koliko se globalnoj promenljivoj b promeni vrednost (obratite pažnju: <i>promeni</i>, ne dodeli vrednost):
+                  <br/>
+                  <br/>
+                  <pre class="prettyprint">
+#include &lt;stdio.h&gt;
+
+int b = 0;
+
+int f1(int b) { return ++b; }
+int f2(int *a) { return ++*a; }
+int f3(int a) { return 2*b; }
+int f4(int *a, int c) {
+  b = c;
+  b += *a++;
+  return b;
+}
+
+int main() {
+  int a, *c;
+  a = 1, b = 2, c = &amp;b;
+  b = f4(c, f4(&amp;a, f3(f1(f2(c)))));
+  printf("%d\n", b);
+  return 0;
+}                  </pre>            
+                </td>
+              </tr>
+              <tr>
+                <td>DD</td>
+                <td>Broj dana od Unix epoch do lansiranja iPhone App Store-a, modulo 256</td>
+              </tr>
+            </table>
           </div>
           <div class="tab-pane fade" id="contact">
             <p>
