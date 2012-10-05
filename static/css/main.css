@@ -121,7 +121,9 @@ a.social.twitter {
   background-image: url('../img/flag_en.png');
 }
 
-.speaker-logo {
+.speaker-logo-container {
+  width: 100%;
+  text-align: center;
 }
 
 .btn-register {
