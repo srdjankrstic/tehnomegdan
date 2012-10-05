@@ -75,7 +75,7 @@ div.social {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 800px;
+  max-width: 900px;
   min-height: 100%;
 }
 
@@ -130,4 +130,17 @@ a.social.twitter {
 
 .fine-print {
   font-size: 10px;
+}
+
+/*#mainTabs>li>a {
+  font-size: 22px;
+}*/
+
+.partner-logo-container {
+  text-align: center;
+}
+
+.partner-logo {
+  width: 224px;
+  margin: 50px 56px 50px 56px;
 }
