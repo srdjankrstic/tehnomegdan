@@ -1,3 +1,8 @@
+  $(function () {
+     var activeTab = $('[href=' + location.hash + ']');
+     activeTab && activeTab.tab('show');
+  });
+
 $(document).ready(function() {
   prettyPrint();
   
@@ -5,5 +10,4 @@ $(document).ready(function() {
     show: false,
     keyboard: true
   });
-
 });
