@@ -4,5 +4,6 @@ $(document).ready(function() {
   $('#registrationModal').modal({
     show: false,
     keyboard: true
-  })
+  });
+
 });
