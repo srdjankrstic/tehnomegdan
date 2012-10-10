@@ -147,6 +147,6 @@ a.social.twitter {
   margin: 20px 56px 20px 56px;
 }
 
-.footer-container {
-    padding: 0 0 10px 0;
+#footer > div > p, #footer > div > div > p > a, #footer > div > div > p > iframe {
+    padding: 0 20px;
 }
